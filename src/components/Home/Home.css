@@ -11,4 +11,15 @@
 }
 .cart-section{
     background-color: #B9DCB9;
+    padding: 20px;
 }
+
+@media only screen and (max-width: 768px) {
+    .main-container{
+        grid-template-columns: 1fr;
+    }
+
+    .cards-section{
+        grid-template-columns: 1fr;
+    }
+  }
