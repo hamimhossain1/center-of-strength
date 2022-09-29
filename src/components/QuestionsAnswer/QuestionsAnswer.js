@@ -21,7 +21,7 @@ const QuestionsAnswer = () => {
             </div>
             <div>
                 <h3>3. What kinds of jobs being done with useEffect without data loading?</h3>
-                <p>Ans: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi architecto deleniti expedita debitis laboriosam, soluta amet dignissimos voluptatibus totam accusantium. </p>
+                <p>Ans: Actually useEffect being used for run side effect. Beside data loading there have some others side effect run timer, direct communication etc.  </p>
             </div>
             
         </div>

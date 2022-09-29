@@ -6,6 +6,7 @@
 .question-and-answer div{
     border: 1px solid gray;
     padding: 20px;
+    /* border-radius: 30px; */
     
 }
 
@@ -18,5 +19,9 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 20px;
+    }
+    .question-and-answer div{
+        border-radius: 30px;
+        
     }
   }
