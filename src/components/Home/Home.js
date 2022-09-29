@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import QuestionsAnswer from '../QuestionsAnswer/QuestionsAnswer';
 import SideCart from '../SideCart/SideCart';
 import SingleExercise from '../SingleExercise/SingleExercise';
 import './Home.css';
@@ -15,7 +16,6 @@ const Home = () => {
 
     return (
         <div>
-            {/* <h2 className='title'>Select today's exercise</h2> */}
             <div className='main-container'>
                 <div className="cards-section">
                     {
@@ -29,6 +29,9 @@ const Home = () => {
                     <SideCart></SideCart>
                     
                 </div>
+            </div>
+            <div className='questions-answer'>
+                <QuestionsAnswer></QuestionsAnswer>
             </div>
         </div>
     );

@@ -12,6 +12,13 @@
 .cart-section{
     background-color: #B9DCB9;
     padding: 20px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+     
+}
+
+.questions-answer{
+    padding: 10px;
 }
 
 @media only screen and (max-width: 768px) {

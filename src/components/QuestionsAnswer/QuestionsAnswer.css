@@ -1,0 +1,9 @@
+.question-and-answer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+.question-and-answer h1{
+    border: 1px solid gray;
+    grid-gap: 20px;
+}
