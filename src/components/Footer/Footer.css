@@ -1,0 +1,17 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 180px;
+    margin-top: 90px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .footer{
+        height: 140px;
+        margin-top: 70px;
+    }
+  }

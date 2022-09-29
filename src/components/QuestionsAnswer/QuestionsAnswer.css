@@ -9,6 +9,10 @@
     
 }
 
+.question-and-answer h3{
+    color: green;
+}
+
 @media only screen and (max-width: 768px) {
     .question-and-answer{
         display: grid;
