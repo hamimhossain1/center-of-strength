@@ -1,9 +1,18 @@
 .question-and-answer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    
-}
-.question-and-answer h1{
-    border: 1px solid gray;
     grid-gap: 20px;
 }
+.question-and-answer div{
+    border: 1px solid gray;
+    padding: 20px;
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .question-and-answer{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+  }
