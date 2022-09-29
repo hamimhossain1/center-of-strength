@@ -19,10 +19,9 @@ const SideCart = ({exerciseTime}) => {
     const addBreak = (breakTime) =>{
         const newTime = breakTime.breakTime;
         setTime(newTime)
-        console.log(newTime)
-        // console.log(timeToBreak.breakTime)
+
+        const storeTime = localStorage.setItem('breakTime', JSON.stringify(newTime));
     }
-    
     
     const activityCompleted = ()=>{
         toast.success("Congratulation you have done with your activity!!!", {position: "top-center"});
