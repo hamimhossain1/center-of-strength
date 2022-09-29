@@ -10,7 +10,7 @@ const SingleExercise = ({exercise}) => {
             <h3>{name}</h3>
             <p><small>{description}</small></p>
             <h5>Suitable age: {age}</h5>
-            <h5>Time required: {time}</h5>
+            <h5>Time required: {time}s</h5>
             <div>
                 <button className='card-btn'>Add to List</button>
             </div>

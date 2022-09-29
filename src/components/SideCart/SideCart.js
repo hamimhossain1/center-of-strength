@@ -31,12 +31,26 @@ const SideCart = () => {
             <div>
                 <h4 className='add-break-title'>Add A Break</h4>
                 <div className='add-break-options'>
-                    <button>20s</button>
-                    <button>10s</button>
-                    <button>30s</button>
-                    <button>40s</button>
-                    <button>20s</button>
+                    <button>20<span>s</span></button>
+                    <button>10<span>s</span></button>
+                    <button>30<span>s</span></button>
+                    <button>40<span>s</span></button>
+                    <button>20<span>s</span></button>
                 </div>
+            </div>
+            <div>
+                <h4 className='exercise-details'>Exercise Details</h4>
+                <div className='exercise-time-div'>
+                    <h5>Exercise time</h5>
+                    <p style={{color: 'gray'}}><small><span>00 </span>seconds</small></p>
+                </div>
+                <div className='break-time-div'>
+                    <h5>Break time</h5>
+                    <p style={{color: 'gray'}}><small><span>00 </span>seconds</small></p>
+                </div>
+            </div>
+            <div>
+                <button className='activity-completed-btn'>Activity Completed</button>
             </div>
         </div>
     );
