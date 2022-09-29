@@ -5,8 +5,9 @@ const SingleExercise = ({exercise}) => {
     console.log(exercise)
     const {name, description, picture, time, age } = exercise;
     return (
-        <div>
+        <div className='single-exercise'>
             <h1>Name: {name}</h1>
+            <img src={picture} alt="" />
         </div>
     );
 };
