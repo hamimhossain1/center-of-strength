@@ -4,7 +4,7 @@ import img1 from '../../images/person.png'
 import { ToastContainer,toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css'; 
 
-const SideCart = () => {
+const SideCart = ({exerciseTime}) => {
 
     const activityCompleted = ()=>{
         toast.success("Congratulation you have done with your activity!!!", {position: "top-center"});
@@ -49,11 +49,11 @@ const SideCart = () => {
                 <h4 className='exercise-details'>Exercise Details</h4>
                 <div className='exercise-time-div'>
                     <h5>Exercise time</h5>
-                    <p style={{color: 'gray'}}><small><span>00 </span>seconds</small></p>
+                    <p ><small><span style={{color: 'white'}}>{exerciseTime} </span>seconds</small></p>
                 </div>
                 <div className='break-time-div'>
                     <h5>Break time</h5>
-                    <p style={{color: 'gray'}}><small><span>00 </span>seconds</small></p>
+                    <p ><small><span style={{color: 'white'}}>00</span> seconds</small></p>
                 </div>
             </div>
             <div>

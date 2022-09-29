@@ -1,9 +1,11 @@
 import React from 'react';
 import './SingleExercise.css';
 
-const SingleExercise = ({exercise}) => {
-    console.log(exercise)
+const SingleExercise = ({exercise, exerciseTime, setExerciseTime, addToList}) => {
+    // console.log(exercise)
     const {name, description, picture, time, age } = exercise;
+
+
     return (
         <div className='single-exercise'>
             <img src={picture} alt="" />
@@ -12,7 +14,7 @@ const SingleExercise = ({exercise}) => {
             <h5>Suitable age: {age}</h5>
             <h5>Time required: {time}s</h5>
             <div>
-                <button className='card-btn'>Add to List</button>
+                <button onClick={() => addToList(exercise)} className='card-btn'>Add to List</button>
             </div>
         </div>
     );
