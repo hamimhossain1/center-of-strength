@@ -2,3 +2,13 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
 }
+.cards-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    grid-gap: 30px;
+    margin-top: 30px;
+}
+.cart-section{
+    background-color: #B9DCB9;
+}
