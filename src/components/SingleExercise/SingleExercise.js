@@ -1,10 +1,8 @@
 import React from 'react';
 import './SingleExercise.css';
 
-const SingleExercise = ({exercise, exerciseTime, setExerciseTime, addToList}) => {
-    // console.log(exercise)
+const SingleExercise = ({exercise, addToList}) => {
     const {name, description, picture, time, age } = exercise;
-
 
     return (
         <div className='single-exercise'>

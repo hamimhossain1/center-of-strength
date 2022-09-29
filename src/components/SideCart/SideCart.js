@@ -1,11 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './SideCart.css';
 import img1 from '../../images/person.png'
 import { ToastContainer,toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css'; 
+import AddABreak from '../AddABreak/AddABreak';
 
 const SideCart = ({exerciseTime}) => {
 
+    const [breakTime, setBreakTime] = useState([])
+    const [time, setTime] = useState(0)
+
+    useEffect(()=>{
+        fetch("dataTwo.json")
+        .then(res => res.json())
+        .then(data => setBreakTime(data))
+    },[])
+
+    const addBreak = (breakTime) =>{
+        const newTime = breakTime.breakTime;
+        setTime(newTime)
+        console.log(newTime)
+        // console.log(timeToBreak.breakTime)
+    }
+    
+    
     const activityCompleted = ()=>{
         toast.success("Congratulation you have done with your activity!!!", {position: "top-center"});
     }
@@ -38,11 +56,13 @@ const SideCart = ({exerciseTime}) => {
             <div>
                 <h4 className='add-break-title'>Add A Break</h4>
                 <div className='add-break-options'>
-                    <button>20<span>s</span></button>
-                    <button>10<span>s</span></button>
-                    <button>30<span>s</span></button>
-                    <button>40<span>s</span></button>
-                    <button>20<span>s</span></button>
+                    {
+                        breakTime.map(singleTime=> <AddABreak 
+                            key={singleTime.id}
+                            singleTime={singleTime}
+                            addBreak={addBreak}
+                        ></AddABreak>)
+                    }
                 </div>
             </div>
             <div>
@@ -53,7 +73,7 @@ const SideCart = ({exerciseTime}) => {
                 </div>
                 <div className='break-time-div'>
                     <h5>Break time</h5>
-                    <p ><small><span style={{color: 'white'}}>00</span> seconds</small></p>
+                    <p ><small><span style={{color: 'white'}}>{time}</span> seconds</small></p>
                 </div>
             </div>
             <div>
