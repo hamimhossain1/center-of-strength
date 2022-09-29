@@ -14,7 +14,10 @@ const QuestionsAnswer = () => {
             </div>
             <div>
                 <h3>2. Difference between props and state?</h3>
-                <p>Ans: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi architecto deleniti expedita debitis laboriosam, soluta amet dignissimos voluptatibus totam accusantium. </p>
+                <p>Ans: Props are a Component’s attributes in React that are useful for customization. Since a prop modifies a component’s behavior or output, it can be compared to a parameter.
+                <br /><br />
+                A built-in React object called the state is used to store data or details about the component. A component may change over time, and a new rendering of the component is produced each time it happens. The component’s behavior and rendering are determined by changes in state, which may occur in reaction to user input or system-generated events.
+                </p>
             </div>
             <div>
                 <h3>3. What kinds of jobs being done with useEffect without data loading?</h3>
