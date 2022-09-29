@@ -1,8 +1,15 @@
 import React from 'react';
 import './SideCart.css';
 import img1 from '../../images/person.png'
+import { ToastContainer,toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css'; 
 
 const SideCart = () => {
+
+    const activityCompleted = ()=>{
+        toast.success("Congratulation you have done with your activity!!!", {position: "top-center"});
+    }
+
     return (
         <div>
             <h1 className='cart-title'>Select today's Exercise</h1>
@@ -50,8 +57,9 @@ const SideCart = () => {
                 </div>
             </div>
             <div>
-                <button className='activity-completed-btn'>Activity Completed</button>
+                <button onClick={activityCompleted} className='activity-completed-btn'>Activity Completed</button>
             </div>
+            <ToastContainer />
         </div>
     );
 };
